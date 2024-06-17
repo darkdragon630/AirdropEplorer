@@ -12,18 +12,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header {
+    padding: 10px 20px;
     background-color: #343a40;
     color: #ffffff;
-    padding: 20px;
-    text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 nav {
@@ -33,14 +29,14 @@ nav {
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #007bff;
+    color: #ffffff;
 }
 
 main {
     flex: 1;
     display: flex;
-    padding: 20px;
     justify-content: center;
+    padding: 20px;
 }
 
 section.content {
@@ -54,11 +50,10 @@ section.content {
 article {
     flex: 3;
     padding: 20px;
-    background-color: #e9ecef;
+    background-color: #ffffff;
     margin-right: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-width: 300px;
 }
 
 aside {
@@ -68,7 +63,6 @@ aside {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
 }
 
 footer {
@@ -84,7 +78,7 @@ img {
     border-radius: 8px;
 }
 
-h1, h2, h3, h4 {
+h2, h4 {
     color: #343a40;
 }
 
@@ -122,10 +116,12 @@ footer p a:hover {
     .header-inner {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        margin-bottom: 10px;
     }
 
     nav {
@@ -160,7 +156,7 @@ footer p a:hover {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     nav a {
