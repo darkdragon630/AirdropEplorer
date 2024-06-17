@@ -111,6 +111,26 @@ footer p a:hover {
     color: #cccccc;
 }
 
+/* Social Media Icons */
+.social-media li {
+    display: flex;
+    align-items: center;
+}
+
+.social-media li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.social-media li a i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
     .header-inner {
@@ -169,5 +189,13 @@ footer p a:hover {
 
     aside {
         padding: 10px;
+    }
+
+    .social-media li a {
+        font-size: 1em;
+    }
+
+    .social-media li a i {
+        font-size: 1.2em;
     }
 }
