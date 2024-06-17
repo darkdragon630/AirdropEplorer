@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen HTML Semantik dengan Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        article {
+            flex: 3;
+            padding: 20px;
+            background-color: #e9ecef;
+            margin-right: 20px;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            article {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Judul Halaman</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Judul Artikel</h2>
+            <p>Ini adalah konten utama dari artikel. Anda dapat menambahkan teks, gambar, video, atau elemen lain di sini.</p>
+            <p>Paragraf tambahan untuk memberikan lebih banyak informasi tentang topik yang dibahas dalam artikel ini.</p>
+        </article>
+        <aside>
+            <h3>Sidebar</h3>
+            <p>Ini adalah konten tambahan yang sering digunakan untuk menampilkan informasi tambahan seperti iklan, link terkait, atau menu navigasi.</p>
+            <img src="https://via.placeholder.com/300" alt="Contoh Gambar">
+            <ul>
+                <li><a href="#link1">Link Terkait 1</a></li>
+                <li><a href="#link2">Link Terkait 2</a></li>
+                <li><a href="#link3">Link Terkait 3</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Perusahaan Anda. Semua Hak Dilindungi.</p>
+        <p><a href="#privacy">Kebijakan Privasi</a> | <a href="#terms">Syarat dan Ketentuan</a></p>
+    </footer>
+</body>
+</html>
